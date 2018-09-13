@@ -18,18 +18,36 @@ NOTE: "briefly describe" = 2-3 sentences (and/or include screenshot(s))
 Use OSINT techniques to learn as much as you can about `kruegster1990` and answer the following questions:
 
 1. What is `kruegster1990`'s real name?
+Fred Krueger
 
 2. List all personal information (including social media accounts) you can find about him. For each, briefly detail how you discovered them.
+Fred Krueger is from Silver Spring, MD. He was born in 1990. He is the owner of Cornerstone Airlines. He first created his twitter account on 12th August, 2018 at 22:28:06. He has one follower, UMD Cybersecurity and is following the account back. He had a bad experience with Malaysian Airlines on August 18th, 2018.
+I found all of the above information through his twitter acccount: https://twitter.com/kruegster1990/
+He uses an secure encrpyted mailbox, Tutanota. His mail is: kruegster@tutanota.com
+I found this through his companies website : http://www.cornerstoneairlines.co/about.html
+He posted an article on Pokemon GO cyber risks on Twitter: https://www2.idexpertscorp.com/knowledge-center/single/can-we-stop-the-pokemon-go-cyber-risks
 
 3. What is the IP address of the webserver hosting his company's site? How did you discover this?
+http://142.93.117.193/
+I discovered it when i clicked on the "Admin" tab on his company's website. 
 
 4. List any hidden files or directories you found on this website. Did you find any flags?
+Yes, I found a hidden directory. I navigated to http://cornerstoneairlines.co/robots.txt 
+This gave me a hint to the name of the directory by displaying:
+User-agent: *
+Disallow: /secret
+http://cornerstoneairlines.co/secret/
 
 5. Did you find any other IP addresses associated with this website? What do they link to, or where did you find them?
+No, I did not find any other IP addresses
 
 6. If you found any associated server(s), where are they located? How did you discover this?
+Apache/2.4.18
+Found it by entering a random non-existent URL
 
 7. Which operating system is running on the associated server(s)? How did you discover this?
+Apache/2.4.18 (Ubuntu) Server at cornerstoneairlines.co Port 80
+I put in a random directory to see if the "Not Found" page would display any information. 
 
 8. **BONUS:** Did you find any other flags on your OSINT mission? (Up to 9 pts!)
 
