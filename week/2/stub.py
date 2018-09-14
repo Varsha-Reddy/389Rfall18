@@ -29,6 +29,8 @@ import socket
 host = "142.93.117.193" # IP address here
 port = 1337 # Port here
 wordlist = "/usr/share/wordlists/rockyou.txt" # Point to wordlist file
+username = 'kruegster'   # Hint: use OSINT
+password = ''   # Hint: use wordlist
 
 def brute_force():
     f = open(wordlist, "r")
@@ -51,8 +53,7 @@ def brute_force():
                 return
             s.close()
 
-    username = 'kruegster'   # Hint: use OSINT
-    password = ''   # Hint: use wordlist
+
 
 
 
