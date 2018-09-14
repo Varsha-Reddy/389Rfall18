@@ -26,6 +26,8 @@ I found all of the above information through his twitter acccount: https://twitt
 He uses an secure encrpyted mailbox, Tutanota. His mail is: kruegster@tutanota.com
 I found this through his companies website : http://www.cornerstoneairlines.co/about.html
 He posted an article on Pokemon GO cyber risks on Twitter: https://www2.idexpertscorp.com/knowledge-center/single/can-we-stop-the-pokemon-go-cyber-risks
+Wordpress: https://zaralarsson115206071.wordpress.com/2018/08/12/kruegster1990/
+Found his instagram account https://www.instagram.com/kruegster1990/ through https://inteltechniques.com 
 
 3. What is the IP address of the webserver hosting his company's site? How did you discover this?
 http://142.93.117.193/
@@ -36,20 +38,30 @@ Yes, I found a hidden directory. I navigated to http://cornerstoneairlines.co/ro
 This gave me a hint to the name of the directory by displaying:
 User-agent: *
 Disallow: /secret
-http://cornerstoneairlines.co/secret/
+Yes, I did find a flag by looking at the page source for http://cornerstoneairlines.co/secret/: CMSC389R-{fly_th3_sk1es_w1th_u5}
 
 5. Did you find any other IP addresses associated with this website? What do they link to, or where did you find them?
-No, I did not find any other IP addresses
+Yes, 142.93.118.186. I found it through reverse IP Domain Check via you get signal. It links to cornerstoneairlines.co
 
 6. If you found any associated server(s), where are they located? How did you discover this?
-Apache/2.4.18
-Found it by entering a random non-existent URL
+According to whois.com, 
+Address:        101 Ave of the Americas
+Address:        10th Floor
+City:           New York
+StateProv:      NY
+PostalCode:     10013
+Country:        US
 
 7. Which operating system is running on the associated server(s)? How did you discover this?
 Apache/2.4.18 (Ubuntu) Server at cornerstoneairlines.co Port 80
+Apache/2.4.18 (Ubuntu) Server at 142.93.118.186 Port 80
 I put in a random directory to see if the "Not Found" page would display any information. 
 
 8. **BONUS:** Did you find any other flags on your OSINT mission? (Up to 9 pts!)
+<!-- Keep looking, class! You're very close :) -->
+Found the flag by viewing page source of admin directory. 
+<!-- CMSC389R-{h1dden_fl4g_in_s0urce} -->
+
 
 ### Part 2
 
@@ -64,6 +76,13 @@ Your response here should briefly document how you approached and solved this pa
 Note: If you choose to write your own program in another language, please include instructions on how to execute your program, including what version of the language you are using. You will **NOT** receive credit if the TAs cannot run your program.
 
 If you are stuck on this part of the assignment, let us know! The facilitator staff is here to help and teach, and we are open to releasing hints as time goes on!
+
+The username is Kruegster and password is pokemon. 
+I gained access to the administrator portal by using the command: nc 142.93.117.193 1337
+I found the port number through nmap. 
+After logging in, I navigated to /home/flight_records
+Through Kruegster's instagram posts, I found pictures of a boarding pass with the number AAC27670. 
+The file AAC27670.txt had CMSC389R-{c0rn3rstone-air27670}
 
 ### Format
 In the "week/2/writeup" directory of our repository there is a README.md file for you to edit and submit your homework in. Use this as a template and directly edit it with your answers. Complete your bruteforce program in this directory as well. When you've finished the assignment, [Push it](https://github.com/UMD-CS-STICs/389Rfall18/blob/master/HW_Submit_Instructions.md) up to your personal GitHub for us to grade.
