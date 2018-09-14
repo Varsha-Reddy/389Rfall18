@@ -76,7 +76,7 @@ Your response here should briefly document how you approached and solved this pa
 Note: If you choose to write your own program in another language, please include instructions on how to execute your program, including what version of the language you are using. You will **NOT** receive credit if the TAs cannot run your program.
 
 If you are stuck on this part of the assignment, let us know! The facilitator staff is here to help and teach, and we are open to releasing hints as time goes on!
-
+ANSWER: 
 The username is Kruegster and password is pokemon. 
 I gained access to the administrator portal by using the command: nc 142.93.117.193 1337
 I found the port number through nmap. 
