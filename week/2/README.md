@@ -58,9 +58,10 @@ Apache/2.4.18 (Ubuntu) Server at 142.93.118.186 Port 80
 I put in a random directory to see if the "Not Found" page would display any information. 
 
 8. **BONUS:** Did you find any other flags on your OSINT mission? (Up to 9 pts!)
-<!-- Keep looking, class! You're very close :) -->
+
+Keep looking, class! You're very close :) 
 Found the flag by viewing page source of admin directory. 
-<!-- CMSC389R-{h1dden_fl4g_in_s0urce} -->
+CMSC389R-{h1dden_fl4g_in_s0urce} 
 
 
 ### Part 2
