@@ -11,9 +11,9 @@ Digital acknowledgement of honor pledge: Katam Varsha Reddy
 ## Assignment 4 Writeup
 
 ### Part 1 (45 pts)                                                                                                                       
-
-I first executed "nc cornerstoneairlines.co 45" in the kali Linux terminal. When prompted for the IP address I put in 142.93.117.193 and nothing happened. 
-Next, tried executing various low-level command line injection commands along with the IP address such as 142.93.117.193 ls /
+First i ran nmap on the IP address 142.93.117.193 and found out that port 1337 was closed. 
+I executed "nc cornerstoneairlines.co 45" in the kali Linux terminal. When prompted for the IP address I put in 142.93.117.193 and nothing happened. 
+Next, tried executing various low-level command line injection commands along with the IP address such as 142.93.117.193; 142.93.117.193 ls /
 142.93.117.193; ls /
 I also tried executing commands with SHELL ESCAPES such as |, && and ...
 When I typed in 142.93.117.193| ls / I was able to view all the directories. I was able to navigate into the home directory using ls /home. 
@@ -26,7 +26,7 @@ Based on the contents of this file, Fred is not validating his input. Fred could
 In regards to arguments, he could whitelist regular expressions and ensure characters such as | && ; are not a part of the expression. Anything other than a valid IP
 should be rejected and all other characters, commands should be validated.
 He could also use regular expressions that only allow numbers and dots. 
-For example, ^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$ will help in validating a users input by making sure
+For example, a regular expression such as ^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$ will help in validating a users input by making sure
 the string contains nothing but an IP address. 
 
 ### Part 2 (55 pts)
