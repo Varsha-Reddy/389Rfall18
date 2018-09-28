@@ -30,4 +30,5 @@ For example, a regular expression such as ^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0
 the string contains nothing but an IP address. 
 
 ### Part 2 (55 pts)
-*Put your writeup >= 200 words here in response to part 2 prompt. Your code for part 2 should be copied into a file in the /writeup directory and pushed there as well*
+To make the shell, I used if else statements to first check to check for "shell", "help" and "quit" in the command entered by the user.
+I used the raw_input() function which prompts the user to enter their input and returns the data in the form of a string. I kept track of the current (/) and previous directories. Inside a while loop that keeps running as long as the user does not input "exit", I used the socket to connect to cornerstoneairlines with port 45. Inside the shell, I checked for "cd" in the case of a user wanting to navigate through directories. The current and previous directories are updated accordingly. Then I used s.send() to send the new command and print the data. The "help" command prints out the help menu and "quit" exits from the shell. 
