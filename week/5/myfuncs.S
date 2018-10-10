@@ -8,8 +8,10 @@ my_memset:
 	mov rcx, 0
 
 func1: cmp rdx, rcx
-      jle exit
+       jle exit
+	     
       mov [rdi+rcx], sil
+
       add rcx, 1
       ;sub rdx, rbx
       jmp func1
@@ -34,9 +36,3 @@ func2: cmp rdx, rcx
        mov [rdi + rcx], al
        add rcx, 1
        jmp func2
-
-
-   ;leave         ;moves down the stack pointer to the current base pointer,
-                      ;and restores our saved base pointer, effectively
-                      ;restoring our previous stack frame
-        ;ret           ;jumps to the top value on the stack, hopefully the return address!
