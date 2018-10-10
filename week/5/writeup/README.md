@@ -15,7 +15,8 @@ Upon fixing those issues, my code was compiling and i was able to run ./main
 It displayed Hello zzzzzz instead of Hello zzzzz!, I assumed this was due one of the three reasons: 
 1. buffer overflow 
 2. I was moving with 'qword' instead of moving a single byte at a time. 
-3. The loop was running one extra time
+3. The loop was running one extra time                                                                                                
+
 To fix it, I changed my loop which was previously 'jl' to 'jle'. Next, I had to figure out how to move bytes instead of words. So I changed my previous mov statement from mov[rdi + rcx], rsi to mov [rdi +rcx], sil
 This helped me copy a single character at a time like how C does. 
 For the second function, I followed the same exact method I used for the first functin by using a loop that checks if i < len and assigns dest[i] = scr[i]. I used mov al, [rsi+rcx] and mov [rdi+rcx], al.
