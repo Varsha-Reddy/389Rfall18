@@ -8,10 +8,8 @@ my_memset:
 	mov rcx, 0
 
 func1: cmp rdx, rcx
-       jle exit
-	     
+       jle exit     
       mov [rdi+rcx], sil
-
       add rcx, 1
       ;sub rdx, rbx
       jmp func1
