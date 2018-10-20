@@ -35,7 +35,8 @@ cd _.stego.extracted/
 
 steghide extract -sf 1.jpeg -xf output.txt (wrote extracted data to output.txt)
 
-cat output.txt                                                                                                                             
+cat output.txt
+
 FLAG: Congrats! Your flag is: CMSC389R-{dropping_files_is_fun}
 
 
