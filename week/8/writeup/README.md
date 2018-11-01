@@ -13,6 +13,7 @@ Digital acknowledgement of honor pledge: Varsha Reddy
 ### Part 1 (45 Pts)
 1. The ip address 128.8.120.43 hosts the University of Maryland Cybersecurity Club http://csec.umd.edu/. 
 I filtered by ICMP and looked for "destination unreachable" / "port unreachable info" 
+The second website they used traceroute on is Google, IP: 216.58.219.238. 
 ![image](https://user-images.githubusercontent.com/42913716/47868849-b63fa200-dddb-11e8-88bb-355bcb80f3a6.png)
 
 2. The names used by the hackers are c0uchpot4doz and laz0rh4x
