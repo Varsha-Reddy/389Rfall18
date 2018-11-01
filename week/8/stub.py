@@ -92,7 +92,7 @@ while(start < len(data)):
     else:
         print("Error")
 
-    f = open("section %d.%d" % (i, int(sectionType)), "w")
+    f = open("section %d" % (int(sectionType)), "w")
     f.write(data[sec_start: sec_end])
     print("\n")
     start += sectionLen + 8
