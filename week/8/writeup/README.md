@@ -38,10 +38,12 @@ Digital acknowledgement of honor pledge: Varsha Reddy
 1. Timestamp: 1540428007. On using a timestamp to human date format it was generated on GMT: Thursday, October 25, 2018 12:40:07 AM
 2. The author is laz0rh4x
    ![image](https://user-images.githubusercontent.com/42913716/47883072-147f7b80-de02-11e8-8452-937c28d1f3a3.png)
+   ![image](https://user-images.githubusercontent.com/42913716/47883639-26621e00-de04-11e8-9269-52d6828ca360.png)
 
 3. The header says there are 9 sections. But in reality there are 11 sections that are visible in the body
 
-4. ![image](https://user-images.githubusercontent.com/42913716/47883169-73dd8b80-de02-11e8-936f-9c98f114e279.png)
+4. 
+![image](https://user-images.githubusercontent.com/42913716/47883169-73dd8b80-de02-11e8-936f-9c98f114e279.png)
 ![image](https://user-images.githubusercontent.com/42913716/47883191-89eb4c00-de02-11e8-92f6-9d3c4b17443c.png)
 
 5.
