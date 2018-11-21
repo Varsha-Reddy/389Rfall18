@@ -22,5 +22,12 @@ On running stub.py I got the flag: CMSC389R-{i_still_put_the_M_between_the_DV}
 ![image](https://user-images.githubusercontent.com/42913716/48812447-68de9280-ed00-11e8-88e6-fd5189964211.png)
 
 ### Part 2 (30 Pts)
-
-
+I used the following commands:
+1. gpg --import pgpassignment.key to import the given public key. The output included the name of the owner.
+![image](https://user-images.githubusercontent.com/42913716/48814321-5405fd00-ed08-11e8-9ce6-487472dc7725.png)
+2. gpg -e -u "Varsha Reddy" -r "UMD Cybersecurity Club" message.txt to encrypt a message in message.txt
+This created a file called message.txt.gpg.
+![image](https://user-images.githubusercontent.com/42913716/48814472-d8588000-ed08-11e8-9ba8-c5681f221966.png)
+3. I re-ran the above command gpg -e -u "Varsha Reddy" -r "UMD Cybersecurity Club" message.txt > message.private to dump the output to a file. 
+![image](https://user-images.githubusercontent.com/42913716/48814544-23729300-ed09-11e8-8821-d0f9d9c50a46.png)
+4. The command to generate keys: gpg --gen-key
