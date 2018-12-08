@@ -34,5 +34,6 @@ flag.
 **LEVEL 5**: For this level, I first clicked on "Sign up". I noticed the URL had next=confirm. I looked at the target code of the sign up frame. This gave me some information about how the URL parameter is used. After trying to append tags, I tried to use the third hint which indicated that "javascript" was to be used. I did a little reading on "If you want to make clicking a link execute Javascript (without using the onclick handler), how can you do it?". One useful link was: *https://stackoverflow.com/questions/1265887/call-javascript-function-on-hyperlink-click*. I tried to use *next=javascript:alert("level5")* and I was prompted to the next level.
 ![image](https://user-images.githubusercontent.com/42913716/49681438-a9b00880-fa6f-11e8-9979-0e6b9539b46e.png)
 
-**LEVEL 6**
-
+**LEVEL 6**: For this level, initially I tried to follow the approach by hosting a js file. I tried to create a js file, save it and host it locally. Half way through, I wanted to try a different (easier) method. I noticed that *data:text/javascript* could create an external file. I added an alert call to it and did, *#data:text/javascript,alert('level6')*. 
+![image](https://user-images.githubusercontent.com/42913716/49681685-188f6080-fa74-11e8-9129-e5f2d582bfd4.png)
+![image](https://user-images.githubusercontent.com/42913716/49681719-83d93280-fa74-11e8-994d-6192f4beb905.png)
